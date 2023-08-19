@@ -1,0 +1,6 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.29.28:3111/ (Press CTRL+C to quit)
+INFO:app:14:52:14.661098 2020 CNCF Annual Report retrieved
+INFO:werkzeug:192.168.29.28 - - [19/Aug/2023 14:52:14] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.29.28 - - [19/Aug/2023 14:52:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

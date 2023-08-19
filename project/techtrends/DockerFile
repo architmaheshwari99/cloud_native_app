@@ -1,0 +1,22 @@
+FROM python:3.8
+
+# Set the working directory within the container
+WORKDIR /app
+
+# Expose the application port
+EXPOSE 3111
+
+# Copy the requirements file into the container at /app
+COPY requirements.txt .
+
+# Install the packages from requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application files into the container at /app
+COPY . .
+
+# Run the database initialization script
+RUN python init_db.py
+
+# Start the application
+CMD ["python", "app.py"]
