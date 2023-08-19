@@ -38,3 +38,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: https://hub.docker.com/repositories/arch676/techtrends:latest
+# demo commit
